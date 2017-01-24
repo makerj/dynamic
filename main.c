@@ -17,7 +17,7 @@ int main() {
         printf("Enter plugin path(leave empty to quit): ");
         ssize_t plugin_path_len = getline(&plugin_path, &_, stdin);
 
-        if(strlen(plugin_path) > 1) {
+        if(plugin_path_len > 1) {
             plugin_path[plugin_path_len - 1] = '\0';
 
             // Load plugin
