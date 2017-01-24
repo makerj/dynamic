@@ -37,6 +37,10 @@ int main() {
                 continue;
             }
 
+            // List function
+            for(int i = 0; i < *functions_count; ++i)
+                printf("plugin '%s' has '%s' function\n", plugin_path, functions[i].name);
+
             // Call function
             for(int i = 0; i < *functions_count; ++i) {
                 int nprint = functions[i].func("Plugin says: ");
